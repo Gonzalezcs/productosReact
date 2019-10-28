@@ -2,6 +2,7 @@ import React from 'react';
 import 'bulma/css/bulma.css';
 import Buscador from './Componentes/Buscador'
 import Resultado from './Componentes/Resultado'
+import {Spring} from 'react-spring/renderprops'
 
 
 class App extends React.Component {
@@ -39,6 +40,7 @@ class App extends React.Component {
     });
   }
 
+
   consultarApi = () =>{
     const pagina = this.state.pagina;
     console.log(pagina);
@@ -63,7 +65,7 @@ class App extends React.Component {
           <div className="hero-body">
             <div className="container">
               <h1 className="title has-text-centered">
-                 Buscador de Imágenes
+                  Buscador
               </h1>
               <Buscador
                 datosBusqueda={this.datosBusqueda}

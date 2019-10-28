@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '@material-ui/core/Button';
 
 class Buscador extends React.Component{
 
@@ -17,7 +18,9 @@ class Buscador extends React.Component{
                         <input ref={this.busquedaRef} type="text" className="input is-medium" placeholder="Busca algo. Ej: Futbol" />
                     </div>
                     <div className="column is-4">
-                        <input type="submit" className="button is-medium is-fullwidth is-warning" placeholder="Busca algo. Ej: Futbol" />
+                        <Button type="submit" variant="contained" color="secondary"  size="large">
+                             Buscar
+                         </Button>
                     </div>
                 </div>
             </form>
