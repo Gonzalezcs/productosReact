@@ -12,10 +12,10 @@ const Imagen = (props) => {
                             <img src={previewURL}/>
                         </figure>
                         </div>
-                        <div className="card-content has-background-grey-light">
+                        <div className="card-content has-background-info">
                             <div className="content">
-                            <p>Me gusta : {likes}</p>
-                            <a target="_blank" href={largeImageURL} className="button is-primary">Descargar</a>
+                            <p className="has-text-white has-text-weigth-bold">Me gusta : {likes}</p>
+                            <a target="_blank" href={largeImageURL} className="button is-warning has-text-black">Descargar</a>
                             </div>
                         </div>
                     </div>

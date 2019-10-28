@@ -1,10 +1,11 @@
 import React from 'react'
 import Imagen from './Imagen'
+import Paginacion from './Paginacion'
+
 class Resultado extends React.Component{
     mostrarImagenes = () =>{
 
         const imagenes = this.props.imagenes
-        var a =1;
         if(imagenes.length ===0){
             return null;
         }
@@ -22,7 +23,17 @@ class Resultado extends React.Component{
                         />
                     ))}
                 </div>
+                <div className="columns is-mobile is-centered">
+                    <div className="column is-3">
+                        <Paginacion 
+                             paginaAnterior={this.props.paginaAnterior}
+                             paginaSiguiente={this.props.paginaSiguiente}
+                        />
+                    </div>
+                </div>
+                
             </React.Fragment>
+
         )
     }
     render(){

@@ -17,7 +17,7 @@ class Buscador extends React.Component{
                         <input ref={this.busquedaRef} type="text" className="input is-medium" placeholder="Busca algo. Ej: Futbol" />
                     </div>
                     <div className="column is-4">
-                        <input type="submit" className="button is-medium is-fullwidth is-danger" placeholder="Busca algo. Ej: Futbol" />
+                        <input type="submit" className="button is-medium is-fullwidth is-warning" placeholder="Busca algo. Ej: Futbol" />
                     </div>
                 </div>
             </form>
